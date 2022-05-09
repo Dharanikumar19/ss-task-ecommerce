@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/", (req,res) => {
-    res.send("E-Commerce Application")
+    res.json({message : "Server is running"})
 })
 
 const URI = process.env.MONGODB_CONN
